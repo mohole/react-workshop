@@ -34,6 +34,11 @@ export const Widget = () => {
       </form>
       <ul>
         {todos.map((todo, index) => (
+          /**
+           * within a loop that generate HTML items in JSX, the "key" property
+           * is required by React to keep track of the HTML nodes changes
+           * https://reactjs.org/docs/lists-and-keys.html
+           */
           <li key={index}>
             <Todo
               label={todo.label}

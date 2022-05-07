@@ -6,7 +6,7 @@
 
 - Why React?
 - Bootstrapping the project
-- Writing the very firt components
+- Writing the very first components
 - Reactive pattern
 - Stateful components (_to-do widget_)
 
@@ -15,21 +15,31 @@ _--- Lunch break! ---_
 **Afternoon**
 
 - What we will build
-- Adding DaisyUI
+- Let's code it!
 - Publish to GH pages
+- Where to go from here
 
 ## Requirements
 
-- [Node.js]() v16+
-- [VS Code]()
-- [React developer tools]() (_browser extension_)
+- [Node.js](https://nodejs.org/) v16+
+- [VS Code](https://code.visualstudio.com/)
+- [React developer tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) (_browser extension_)
 
 ## What we are using
 
-- [React v18]() - reactive UI library
-- [Vite.js]() - project bootstrapping
-- [TailwindCSS]() - CSS as utility classes
-- [DaisyUI]() - UI components built on top of TailwindCSS
+- [React v18](https://reactjs.org/) - reactive UI library
+- [Vite.js](https://vitejs.dev/) - project bootstrapping
+- [TailwindCSS](https://tailwindcss.com/) - CSS as utility classes
+- [DaisyUI](https://daisyui.com/) - UI components built on top of TailwindCSS
+
+## Repository structure
+
+| Folder          | Description                     | Requires NPM install? |
+| --------------- | ------------------------------- | --------------------- |
+| `(root)`        | main config files               | ✅                    |
+| `/src`          | web app source files            |                       |
+| `/fundamentals` | React introduction source files |                       |
+| `/docs`         | references, notes & slides      |                       |
 
 ## Getting started
 
