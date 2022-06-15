@@ -1,4 +1,4 @@
-const BASE_URL = "https://learn-nextjs-chi-eosin.vercel.app";
+const BASE_URL = "https://learn-nextjs-six-cyan.vercel.app";
 const ENDPOINT = BASE_URL + "/api/excursions"
 
 const http = (id, options) =>
