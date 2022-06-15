@@ -11,22 +11,35 @@ function App() {
    * Define a getter and a setter internal states
    */
   const [items, setItems] = useState([]);
-  const [current, setCurrent] = useState({})
+  const [current, setCurrent] = useState({});
 
+  /**
+   * Do something on component init on page
+   */
   useEffect(() => {
+    /**
+     * We can't use async function as callback, but we can define one inside
+     */
     const getData = async () => {
       const data = await GET();
-      const mock = new Array(9).fill(data[0])
+      const mock = new Array(9).fill(data[0]);
       setItems(mock);
     };
     getData();
   }, []);
 
+  /**
+   * Given a UUID set an item within the items collection as current
+   * @param {string} uuid the current UUID
+   */
   const selected = (uuid) => {
     const results = items.filter((item) => item.uuid === uuid);
-    setCurrent(results[0])
-  }
+    setCurrent(results[0]);
+  };
 
+  /**
+   * When the modal closes we set an empty object as current
+   */
   const close = () => setCurrent({});
 
   return (
@@ -36,12 +49,14 @@ function App() {
         <ul className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {items.map((item, index) => (
             <li key={index}>
-              <Card 
-                title={item.name} 
-                photo={item.photo} 
+              <Card
+                title={item.name}
+                photo={item.photo}
                 uuid={item.uuid}
                 selected={selected}
-              >{item.notes}</Card>
+              >
+                {item.notes}
+              </Card>
             </li>
           ))}
         </ul>

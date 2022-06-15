@@ -1,4 +1,3 @@
-
 /**
  * React components are just functions that returns JSX!
  */
