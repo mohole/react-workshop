@@ -1,9 +1,15 @@
 import { useState } from "react";
 
 import { Todo } from "./Todo";
+import { Form } from "./Form";
+import { Footer } from "./Footer";
+
 import data from "./../data.json";
 
 export const Widget = () => {
+  /**
+   * Internal states of the widget
+   */
   const [todos, setTodos] = useState(data);
   const [text, setText] = useState("");
 
@@ -23,15 +29,7 @@ export const Widget = () => {
   return (
     <div>
       <h3 className="text-xl font-bold my-5">Todo Widget</h3>
-      <form onSubmit={addItem}>
-        <input
-          type="text"
-          placeholder="Add a new todo"
-          className="input input-bordered w-full max-w-xs"
-          value={text}
-          onChange={(event) => setText(event.target.value)}
-        />
-      </form>
+      <Form text={text} addItem={addItem} setText={setText} />
       <ul>
         {todos.map((todo, index) => (
           /**
@@ -49,6 +47,7 @@ export const Widget = () => {
           </li>
         ))}
       </ul>
+      <Footer todos={todos} />
     </div>
   );
 };

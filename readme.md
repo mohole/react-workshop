@@ -1,23 +1,4 @@
-# React Workshop - 01/06/2022 @ Mohole
-
-## Table of contents
-
-**Morning**
-
-- Why React?
-- Bootstrapping the project
-- Writing the very first components
-- Reactive pattern
-- Stateful components (_to-do widget_)
-
-_--- Lunch break! ---_
-
-**Afternoon**
-
-- What we will build
-- Let's code it!
-- Publish to GH pages
-- Where to go from here
+# React Workshop - 15/06/2022 @ Mohole
 
 ## Requirements
 
@@ -34,12 +15,15 @@ _--- Lunch break! ---_
 
 ## Repository structure
 
-| Folder          | Description                     | Requires NPM install? |
-| --------------- | ------------------------------- | --------------------- |
-| `(root)`        | main config files               | ✅                    |
-| `/src`          | web app source files            |                       |
-| `/fundamentals` | React introduction source files |                       |
-| `/docs`         | references, notes & slides      |                       |
+| Folder          | Description                     |
+| --------------- | ------------------------------- |
+| `(root)`        | main config files               |
+| `/fundamentals` | React introduction source files |
+| `/src`          | web app source files            |
+
+## API
+
+The API consumed by the application in the /src folder is [https://learn-nextjs-six-cyan.vercel.app/api/excursions](https://learn-nextjs-six-cyan.vercel.app/api/excursions) , the project behind it is the [learn-nextjs](https://github.com/mohole/learn-nextjs) repo.
 
 ## Getting started
 
