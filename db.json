@@ -1,0 +1,12 @@
+{
+  "excursions": [
+    {
+      "id": 0,
+      "name": "Mount Nowhere",
+      "height": 2000,
+      "photo": "https://picsum.photos/id/15/1024/768.webp",
+      "timing": 180,
+      "notes": "First, and succesful attempt! But I definetely need to buy better gear..."
+    }
+  ]
+}
