@@ -9,6 +9,7 @@
 ## What we are using
 
 - [React v18](https://reactjs.org/) - reactive UI library
+- [React Router v6](https://reactrouter.com/) - client side routing for React
 - [Vite.js](https://vitejs.dev/) - project bootstrapping
 - [TailwindCSS](https://tailwindcss.com/) - CSS as utility classes
 - [DaisyUI](https://daisyui.com/) - UI components built on top of TailwindCSS
@@ -19,11 +20,12 @@
 | --------------- | ------------------------------- |
 | `(root)`        | main config files               |
 | `/fundamentals` | React introduction source files |
+| `/examples `    | Out of scope examples           |
 | `/src`          | web app source files            |
 
 ## API
 
-The API consumed by the application in the /src folder is [https://learn-nextjs-six-cyan.vercel.app/api/excursions](https://learn-nextjs-six-cyan.vercel.app/api/excursions) , the project behind it is the [learn-nextjs](https://github.com/mohole/learn-nextjs) repo.
+The API consumed by the application in the /src folder is [https://mohole-react-backend.herokuapp.com/excursions](https://mohole-react-backend.herokuapp.com/excursions) , the project behind it is the [backend](https://github.com/mohole/react-workshop/tree/backend) branch.
 
 ## Getting started
 
