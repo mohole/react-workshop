@@ -1,4 +1,4 @@
-# React Workshop - 15/06/2022 @ Mohole
+# React Workshop - 15+29/06/2022 @ Mohole
 
 ## Requirements
 
